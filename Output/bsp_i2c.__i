@@ -1,0 +1,5 @@
+--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\User\led -I ..\User\SysTick -I ..\User\usart -I ..\User\DSP_Lib -I ..\User\DSP_Lib\Inc -I ..\User\i2c
+-IE:\Users\LU\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-IE:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="531" -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT -D__FPU_USED -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING
+-o ..\output\bsp_i2c.o --omf_browse ..\output\bsp_i2c.crf --depend ..\output\bsp_i2c.d "..\User\i2c\bsp_i2c.c"
